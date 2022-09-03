@@ -3,5 +3,5 @@ import tensorflow as tf
 converter = tf.lite.TFLiteConverter.from_keras_model(model)  #converter for the model
 tflite_model = converter.convert()
 
-with open("model.tflite", 'wb') as f:  
+with open("model.tflite", 'wb') as f:   #load the model
   f.write(tflite_model) 
